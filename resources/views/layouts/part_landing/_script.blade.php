@@ -14,4 +14,6 @@
 <script src="{{asset('cuba/assets/js/slick/slick.min.js')}}"></script>
 <script src="{{asset('cuba/assets/js/slick/slick.js')}}"></script>
 <script src="{{asset('cuba/assets/js/landing-slick.js')}}"></script>
+
+@stack('custom-script')
 <!-- Plugins JS Ends-->

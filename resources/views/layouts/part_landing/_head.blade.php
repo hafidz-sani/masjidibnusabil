@@ -26,6 +26,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('cuba/assets/css/style.css') }}">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="{{ asset('cuba/assets/css/responsive.css') }}">
-
+    <!-- CSS Out of Template -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('cuba/assets/css/oot.css') }}">
+    <!-- Custom CSS -->
     @stack('custom-styles')
   </head>

@@ -26133,8 +26133,8 @@ footer {
   position: relative;
   background-position: bottom;
   background-size: cover;
-  background-image: url(../images/landing/home-bg.jpg);
-  background-color: #1b1c21;
+  /* background-color: #EAF7ED; */
+  background-color: #FFFFFF;
 }
 .landing-home .sub-title {
   font-size: calc(18px + 12 * (100vw - 300px) / 1620);
@@ -27067,7 +27067,7 @@ footer {
 .footer-bg {
   position: relative;
   text-align: center;
-  background: url(../images/landing/footer.jpg);
+  background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%);
   margin-left: 0;
   color: #fff;
 }

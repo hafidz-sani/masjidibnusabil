@@ -2,7 +2,6 @@
 <html lang="en">
 
 @include('layouts.part_landing._head')
-
 <body class="landing-page">
     <!-- tap on top starts-->
     <div class="tap-top"><i data-feather="chevrons-up"></i></div>
@@ -11,10 +10,9 @@
     <div class="landing-page">
         <!-- Page Body Start -->
         <div class="landing-home">
-            <div class="container-fluid">
-
+            <div class="">
                 {{-- NAVBAR --}}
-                <div class="sticky-header">
+                <div class="sticky-header container-fluid">
                     @include('layouts.part_landing._navbar')
                 </div>
                 {{-- END NAVBAR --}}
