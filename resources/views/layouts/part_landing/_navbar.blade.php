@@ -7,11 +7,11 @@
             aria-label="Toggle navigation"><span></span><span></span><span></span></button>
         <div class="navbar-collapse justify-content-center collapse hidenav" id="navbarDefault">
             <ul class="navbar-nav navbar_nav_modify" id="scroll-spy">
-                <li class="nav-item"><a class="nav-link me-3" href="#layout">Profil</a></li>
+                <li class="nav-item"><a class="nav-link me-3" href="{{ route('profil') }}">Profil</a></li>
                 <li class="nav-item"><a class="nav-link me-3" href="{{ route('agenda') }}">Agenda</a></li>
                 <li class="nav-item"><a class="nav-link me-3" href="{{ route('photo') }}">Foto</a></li>
-                <li class="nav-item"><a class="nav-link me-3" href="#applications">Video</a></li>
-                <li class="nav-item"><a class="nav-link me-3" href="#documentation">Kajian</a></li>
+                <li class="nav-item"><a class="nav-link me-3" href="{{ route('video') }}">Video</a></li>
+                <li class="nav-item"><a class="nav-link me-3" href="{{ route('kajian') }}">Kajian</a></li>
                 <li class="nav-item"><a class="nav-link me-3" href="#landings">Keuangan</a></li>
             </ul>
         </div>
