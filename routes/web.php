@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+// LANDING PAGE ROUTES
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/photo', [App\Http\Controllers\PhotoController::class, 'index'])->name('photo');
 Route::get('/agenda', [App\Http\Controllers\AgendaController::class, 'index'])->name('agenda');
@@ -27,3 +29,11 @@ Route::get('/profil', [App\Http\Controllers\ProfilController::class, 'index'])->
 Route::get('/video', [App\Http\Controllers\VideoController::class, 'index'])->name('video');
 Route::get('/kajian', [App\Http\Controllers\KajianController::class, 'index'])->name('kajian');
 Route::get('/keuangan', [App\Http\Controllers\KeuanganController::class, 'index'])->name('keuangan');
+
+
+// DASHBOARD ROUTES
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+    // Route::get('/dashboard', [App\Http\Controllers\KeuanganController::class, 'index'])->name('keuangan');
+});
+

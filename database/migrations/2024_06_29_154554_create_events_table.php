@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->date('date');
             $table->time('time');
-            $table->foreignId('thumbnail')->constrained('galleries', 'thumbnail');
+            $table->foreignId('thumbnail')->references('id')->on('gallery')->constrained()->onUpdate('cascade')->onDelete('restrict');
             $table->string('title', 255);
             $table->string('subtitle', 255);
             $table->text('content');

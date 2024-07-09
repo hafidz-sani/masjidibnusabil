@@ -1,8 +1,8 @@
 <!-- Page Sidebar Start-->
 <div class="sidebar-wrapper" sidebar-layout="stroke-svg">
     <div>
-        <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="{{ asset('logo.png') }}"
-                    alt=""><img class="img-fluid for-dark" src="{{ asset('logo.png') }}" alt=""></a>
+        <div class="mt-3 d-flex justify-content-center"><a href="{{ route('home') }}"><img class="img-fluid for-light" width="80px" src="{{ asset('images/logo_masjid.png') }}"
+                    alt=""><img class="img-fluid for-dark" src="{{ asset('images/logo_masjid.png') }}" alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"></i></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
         </div>

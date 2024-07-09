@@ -22,7 +22,7 @@
         @endguest
         @auth
             <div class="d-flex">
-                <a href="#" class="nav-link js-scroll btn btn-primary">Dashboard</a>
+                <a href="{{ route('dashboard') }}" class="nav-link js-scroll btn btn-primary">Dashboard</a>
                 <form action="{{ route('logout') }}" method="POST" class="ms-2">
                     {{ csrf_field() }}
                     <button class="nav-link js-scroll btn btn-danger" type="submit">Logout</button>
