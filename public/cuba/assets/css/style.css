@@ -27067,8 +27067,7 @@ footer {
 .footer-bg {
   position: relative;
   text-align: center;
-  background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%);
-  margin-left: 0;
+  background-image: url(../../../images/footer.png);
   color: #fff;
 }
 @media (max-width: 575px) {

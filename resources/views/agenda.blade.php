@@ -5,7 +5,7 @@
     .title-images {
         /* background-color: transparent; */
         /* background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%); */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/class_of_business/money.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{ asset('images/agenda.png')}}");
         /* background-image: url(../../../images/bg1.jpg); */
         /* background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%); */
         height: 70vh;
@@ -28,9 +28,6 @@
     <div class="row">
         <div class="col-xl-8 col-md-12 col-sm-12">
             <div class="card">
-                <div class="card-header">
-                    <h5>Agenda</h5>
-                </div>
                 <div class="row p-2 mb-3">
                     <div class="col-5">
                         <img src="{{ asset('images/poster1.png')}}" class="w-100" alt="">

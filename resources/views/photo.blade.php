@@ -5,7 +5,8 @@
     .title-images {
         /* background-color: transparent; */
         /* background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%); */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/class_of_business/money.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("{{ asset('images/photo.png')}}");
         /* background-image: url(../../../images/bg1.jpg); */
         /* background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%); */
         height: 70vh;
@@ -95,35 +96,53 @@
                     <h5>IMAGE GALLERY</h5>
                 </div>
                 <div class="gallery my-gallery card-body row" itemscope="">
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <figure class="col-md-4 mb-4">
+                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
                         </a>
+                        <figcaption class="text-center mt-1 mt-1">
+                            <p class="text-secondary small">Ini Judul</p>
+                        </figcaption>
                     </figure>
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <figure class="col-md-4 mb-4">
+                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
                         </a>
+                        <figcaption class="text-center mt-1">
+                            <p class="text-secondary small">Ini Judul</p>
+                        </figcaption>
                     </figure>
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <figure class="col-md-4 mb-4">
+                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
                         </a>
+                        <figcaption class="text-center mt-1">
+                            <p class="text-secondary small">Ini Judul</p>
+                        </figcaption>
                     </figure>
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <figure class="col-md-4 mb-4">
+                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
                         </a>
+                        <figcaption class="text-center mt-1">
+                            <p class="text-secondary small">Ini Judul</p>
+                        </figcaption>
                     </figure>
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <figure class="col-md-4 mb-4">
+                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
                         </a>
+                        <figcaption class="text-center mt-1">
+                            <p class="text-secondary small">Ini Judul</p>
+                        </figcaption>
                     </figure>
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <figure class="col-md-4 mb-4">
+                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
                         </a>
+                        <figcaption class="text-center mt-1">
+                            <p class="text-secondary small">Ini Judul</p>
+                        </figcaption>
                     </figure>
                 </div>
             </div>

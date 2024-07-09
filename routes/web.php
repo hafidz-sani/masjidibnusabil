@@ -25,3 +25,4 @@ Route::get('/agenda', [App\Http\Controllers\AgendaController::class, 'index'])->
 Route::get('/profil', [App\Http\Controllers\ProfilController::class, 'index'])->name('profil');
 Route::get('/video', [App\Http\Controllers\VideoController::class, 'index'])->name('video');
 Route::get('/kajian', [App\Http\Controllers\KajianController::class, 'index'])->name('kajian');
+Route::get('/keuangan', [App\Http\Controllers\KeuanganController::class, 'index'])->name('keuangan');

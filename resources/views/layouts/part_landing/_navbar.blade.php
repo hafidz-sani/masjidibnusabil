@@ -12,7 +12,7 @@
                 <li class="nav-item"><a class="nav-link me-3" href="{{ route('photo') }}">Foto</a></li>
                 <li class="nav-item"><a class="nav-link me-3" href="{{ route('video') }}">Video</a></li>
                 <li class="nav-item"><a class="nav-link me-3" href="{{ route('kajian') }}">Kajian</a></li>
-                <li class="nav-item"><a class="nav-link me-3" href="#landings">Keuangan</a></li>
+                <li class="nav-item"><a class="nav-link me-3" href="{{ route('keuangan') }}">Keuangan</a></li>
             </ul>
         </div>
         @guest

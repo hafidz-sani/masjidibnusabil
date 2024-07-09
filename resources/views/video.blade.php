@@ -5,7 +5,8 @@
     .title-images {
         /* background-color: transparent; */
         /* background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%); */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/class_of_business/money.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("{{ asset('images/video.png')}}");
         /* background-image: url(../../../images/bg1.jpg); */
         /* background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%); */
         height: 70vh;
@@ -28,40 +29,45 @@
     <div class="row">
         <div class="col-xl-8 col-md-12 col-sm-12">
             <div class="card">
-                <div class="card-header">
-                    <h5>VIDEO GALLERY</h5>
-                </div>
                 <div class="gallery my-gallery card-body row" itemscope="">
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <figure class="col-md-6 mb-6">
+                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
                         </a>
+                        <figcaption class="text-center">
+                            <h6 class="fw-bold mb-1">Judul</h6>
+                            <p class="text-secondary small">Posted on <span class="text-muted">Tanggal</span></p>
+                        </figcaption>
                     </figure>
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+
+                    <figure class="col-md-6 mb-6">
+                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
                         </a>
+                        <figcaption class="text-center">
+                            <h6 class="fw-bold mb-1">Judul</h6>
+                            <p class="text-secondary small">Posted on <span class="text-muted">Tanggal</span></p>
+                        </figcaption>
                     </figure>
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <figure class="col-md-6 mb-6">
+                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
                         </a>
+                        <figcaption class="text-center">
+                            <h6 class="fw-bold mb-1">Judul</h6>
+                            <p class="text-secondary small">Posted on <span class="text-muted">Tanggal</span></p>
+                        </figcaption>
                     </figure>
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <figure class="col-md-6 mb-6">
+                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
                         </a>
+                        <figcaption class="text-center">
+                            <h6 class="fw-bold mb-1">Judul</h6>
+                            <p class="text-secondary small">Posted on <span class="text-muted">Tanggal</span></p>
+                        </figcaption>
                     </figure>
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
-                        </a>
-                    </figure>
-                    <figure class="col-4" itemprop="associatedMedia" itemscope="">
-                        <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                            <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
-                        </a>
-                    </figure>
+
                 </div>
             </div>
         </div>
