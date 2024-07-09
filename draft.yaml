@@ -1,0 +1,14 @@
+models:
+  Gallery:
+    url: string:255
+    title: string:255
+    description: text nullable
+    category: enum:image,video
+
+  Event:
+    date: date
+    time: time
+    thumbnail: id foreign:gallery
+    title: string:255
+    subtitle: string:255
+    content: text

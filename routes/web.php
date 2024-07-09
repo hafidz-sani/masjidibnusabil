@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/photo', [App\Http\Controllers\PhotoController::class, 'index'])->name('photo');
-Route::get('/agenda', [App\Http\Controllers\AgendaController::class, 'index'])->name('agenda');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/photo', [App\Http\Controllers\PhotoController::class, 'index'])->name('photo');
+// Route::get('/agenda', [App\Http\Controllers\AgendaController::class, 'index'])->name('agenda');
+
+Route::resource('galleries', App\Http\Controllers\GalleryController::class);
+
+Route::resource('events', App\Http\Controllers\EventController::class);
+
+Route::resource('galleries', App\Http\Controllers\GalleryController::class);
+
+Route::resource('events', App\Http\Controllers\EventController::class);

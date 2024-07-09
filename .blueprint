@@ -1,0 +1,11 @@
+created:
+    - database/factories/GalleryFactory.php
+    - database/factories/EventFactory.php
+    - database/migrations/2024_06_29_154553_create_galleries_table.php
+    - database/migrations/2024_06_29_154554_create_events_table.php
+    - app/Models/Gallery.php
+    - app/Models/Event.php
+models:
+    User: { name: string, email: string, email_verified_at: 'timestamp nullable default:NULL', password: string, remember_token: 'string:100 nullable default:NULL' }
+    Gallery: { url: 'string:255', title: 'string:255', description: 'text nullable', category: 'enum:image,video' }
+    Event: { date: date, time: time, thumbnail: 'id foreign:gallery', title: 'string:255', subtitle: 'string:255', content: text }
