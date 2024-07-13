@@ -36,26 +36,20 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('images/img-1.png')}}" class="d-block w-100" alt="...">
+                        <img src="{{ asset('images/Lomba ISRC.jpg')}}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5>Lomba ISRC</h5>
+                            <p>Kegiatan Lomba ISRC saat ramadhan 2023</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('images/img-1.png')}}" class="d-block w-100" alt="...">
+                        <img src="{{ asset('images/Lomba ISRC2.jpg')}}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h5>Lomba ISRC</h5>
+                            <p>Kegiatan Lomba ISRC saat ramadhan 2023</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('images/img-1.png')}}" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -70,23 +64,23 @@
 
             <div class="row mt-3">
                 <div class="col-3 ">
-                    <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                        <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <a href="{{ asset('images/DSC00338.jpg')}}" itemprop="contentUrl" data-size="1600x950">
+                        <img class="img-thumbnail" src="{{ asset('images/DSC00338.jpg')}}" itemprop="thumbnail" alt="Image description">
                     </a>
                 </div>
                 <div class="col-3 ">
-                    <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                        <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <a href="{{ asset('images/DSC00728.jpg')}}" itemprop="contentUrl" data-size="1600x950">
+                        <img class="img-thumbnail" src="{{ asset('images/DSC00728.jpg')}}" itemprop="thumbnail" alt="Image description">
                     </a>
                 </div>
                 <div class="col-3 ">
-                    <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                        <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <a href="{{ asset('images/DSC00723.jpg')}}" itemprop="contentUrl" data-size="1600x950">
+                        <img class="img-thumbnail" src="{{ asset('images/DSC00723.jpg')}}" itemprop="thumbnail" alt="Image description">
                     </a>
                 </div>
                 <div class="col-3 ">
-                    <a href="{{ asset('images/img-1.png')}}" itemprop="contentUrl" data-size="1600x950">
-                        <img class="img-thumbnail" src="{{ asset('images/img-1.png')}}" itemprop="thumbnail" alt="Image description">
+                    <a href="{{ asset('images/DSC00695.jpg')}}" itemprop="contentUrl" data-size="1600x950">
+                        <img class="img-thumbnail" src="{{ asset('images/DSC00695.jpg')}}" itemprop="thumbnail" alt="Image description">
                     </a>
                 </div>
             </div>
@@ -97,52 +91,38 @@
                 </div>
                 <div class="gallery my-gallery card-body row" itemscope="">
                     <figure class="col-md-4 mb-4">
-                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
+                        <a href="{{ asset('images/DSC00338.jpg')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/DSC00338.jpg')}}" alt="Image description">
                         </a>
-                        <figcaption class="text-center mt-1 mt-1">
+                        <!-- <figcaption class="text-center mt-1">
                             <p class="text-secondary small">Ini Judul</p>
-                        </figcaption>
+                        </figcaption> -->
                     </figure>
                     <figure class="col-md-4 mb-4">
-                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
+                        <a href="{{ asset('images/DSC00695.jpg')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/DSC00695.jpg')}}" alt="Image description">
                         </a>
-                        <figcaption class="text-center mt-1">
+                        <!-- <figcaption class="text-center mt-1">
                             <p class="text-secondary small">Ini Judul</p>
-                        </figcaption>
+                        </figcaption> -->
                     </figure>
+                   
                     <figure class="col-md-4 mb-4">
-                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
+                        <a href="{{ asset('images/Lomba ISRC2.jpg')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/Lomba ISRC2.jpg')}}" alt="Image description">
                         </a>
-                        <figcaption class="text-center mt-1">
+                        <!-- <figcaption class="text-center mt-1">
                             <p class="text-secondary small">Ini Judul</p>
-                        </figcaption>
+                        </figcaption> -->
                     </figure>
+                    
                     <figure class="col-md-4 mb-4">
-                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
+                        <a href="{{ asset('images/Lomba ISRC2.jpg')}}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ asset('images/Lomba ISRC2.jpg')}}" alt="Image description">
                         </a>
-                        <figcaption class="text-center mt-1">
+                        <!-- <figcaption class="text-center mt-1">
                             <p class="text-secondary small">Ini Judul</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="col-md-4 mb-4">
-                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
-                        </a>
-                        <figcaption class="text-center mt-1">
-                            <p class="text-secondary small">Ini Judul</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="col-md-4 mb-4">
-                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
-                        </a>
-                        <figcaption class="text-center mt-1">
-                            <p class="text-secondary small">Ini Judul</p>
-                        </figcaption>
+                        </figcaption> -->
                     </figure>
                 </div>
             </div>
@@ -153,7 +133,7 @@
             <div class="">
                 <p class="fs-5" style="color: #ffb905;">
                     <span style="font-family: 'Arial', sans-serif;" class="text-dark fw-bolder">Follow</span>
-                    @MasjidIbnuSabilOfficial
+                    @masjidibnusabiljkt
                 </p>
                 <div style="width: 30%; height: 4px; background-color: #6AEBAD;"></div>
             </div>

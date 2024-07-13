@@ -34,7 +34,7 @@
                         <option selected hidden>Kategori</option>
                         <option value="1">Ikhwan</option>
                         <option value="2">Akhwat</option>
-                        <option value="3">Umum</option>
+                        <option value="4">Spesial</option>
                     </select>
                     <input type="text" class="form-control me-2">
                     <input type="submit" class="btn btn-success" value="Cari">
@@ -44,29 +44,28 @@
                     <figure class="col-md-6 mb-6">
                         <iframe class="w-100" src="https://www.youtube.com/embed/C2c0MMehKlY?si=-9LjL47bSDbnAx6L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Lorem ipsum dolor sit amet.</h6>
+                            <h6 class="fw-bold mb-1">Bulughul Maram</h6>
                             <p class="text-secondary small">Kategori <span class="text-muted">Kajian Ummahat</span></p>
                         </figcaption>
                     </figure>
                     <figure class="col-md-6 mb-6">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/C2c0MMehKlY?si=-9LjL47bSDbnAx6L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Lorem ipsum dolor sit amet consectetur.</h6>
-                            <p class="text-secondary small">Kategori <span class="text-muted">Kajian Ummahat</span></p>
+                    <iframe class="w-100" src="https://www.youtube.com/embed/w_s4HA8XCQE?si=71q8FlAYj44pHdDO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        <figcaption class="text-center">
+                            <h6 class="fw-bold mb-1">APA ITU TAQWA? - USTADZ ABU SAAD</h6>
+                            <p class="text-secondary small">Kategori <span class="text-muted">Kajian Spesial</span></p>
                         </figcaption>
                     </figure>
                     <figure class="col-md-6 mb-6">
                         <iframe class="w-100" src="https://www.youtube.com/embed/zUPc7MrcMAQ?si=bDSXD76M2TcPiwla" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Lorem, ipsum dolor.</h6>
-                            <p class="text-secondary small">Kategori <span class="text-muted">Kajian Ummahat</span></p>
+                            <h6 class="fw-bold mb-1">Memperbanyak Kebaikan Di Hari Tua.</h6>
+                            <p class="text-secondary small">Kategori <span class="text-muted">Kajian Spesial</span></p>
                         </figcaption>
                     </figure>
                     <figure class="col-md-6 mb-6">
                         <iframe class="w-100" src="https://www.youtube.com/embed/afaUm8lIfMY?si=-KRga9GX7DMP5wFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Lorem ipsum dolor sit, amet consectetur adipisicing.</h6>
-                            <p class="text-secondary small">Kategori <span class="text-muted">Kajian Ummahat</span></p>
+                            <h6 class="fw-bold mb-1">Kajian Tematik</h6>
+                            <p class="text-secondary small">Kategori <span class="text-muted">Kajian Spesial</span></p>
                         </figcaption>
                     </figure>
                 </div>
@@ -78,7 +77,7 @@
             <div class="">
                 <p class="fs-5" style="color: #ffb905;">
                     <span style="font-family: 'Arial', sans-serif;" class="text-dark fw-bolder">Follow</span>
-                    @MasjidIbnuSabilOfficial
+                    @masjidibnusabiljkt
                 </p>
                 <div style="width: 30%; height: 4px; background-color: #6AEBAD;"></div>
             </div>

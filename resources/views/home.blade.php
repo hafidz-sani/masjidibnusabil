@@ -23,7 +23,7 @@
             <div class="">
                 <h6 class="content-title mb-1"><img class="arrow-decore" src="{{ asset('cuba/assets/images/landing/decore/arrow.svg') }}" alt=""><span class="sub-title tes">Selamat Datang di website official </span></h6>
                 <h1 class="wow fadeIn"><span>Masjid Ibnu Sabil Pisangan Baru</span></h1>
-                <p class="mt-3 wow fadeIn">Pusat Pendidikan dan Pelatihan Badan Pusat Statistik</p>
+                <p class="mt-3 wow fadeIn">Tempat Ibadah dan Kegiatan Agama Jakarta Timur</p>
 
                 {{-- LOGO --}}
                 <div class="btn-grp mt-4">

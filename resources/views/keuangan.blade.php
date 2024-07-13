@@ -5,7 +5,8 @@
     .title-images {
         /* background-color: transparent; */
         /* background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%); */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("{{ asset('images/video.png')}}");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("{{ asset('images/keuangan.png')}}");
         /* background-image: url(../../../images/bg1.jpg); */
         /* background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%); */
         height: 70vh;
@@ -64,68 +65,44 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Oktober</td>
-                            <td>Minggu 1</td>
-                            <td>3000</td>
-                            <td>4000</td>
-                            <td>5000</td>
-                            <td>6000</td>
-                        </tr>
-                        <tr>
-                            <td>Oktober</td>
-                            <td>Minggu 2</td>
-                            <td>3500</td>
-                            <td>4500</td>
-                            <td>5500</td>
-                            <td>6500</td>
-                        </tr>
-                        <tr>
-                            <td>Oktober</td>
-                            <td>Minggu 3</td>
-                            <td>4000</td>
-                            <td>5000</td>
-                            <td>6000</td>
-                            <td>7000</td>
-                        </tr>
-                        <tr>
-                            <td>Oktober</td>
+                            <td>Mei</td>
                             <td>Minggu 4</td>
-                            <td>4500</td>
-                            <td>5500</td>
-                            <td>6500</td>
-                            <td>7500</td>
+                            <td>244000</td>
+                            <td>456000</td>
+                            <td>562000</td>
+                            <td>4535000</td>
                         </tr>
                         <tr>
-                            <td>November</td>
+                            <td>Juni</td>
                             <td>Minggu 1</td>
-                            <td>5000</td>
-                            <td>6000</td>
-                            <td>7000</td>
-                            <td>8000</td>
+                            <td>340000</td>
+                            <td>500000</td>
+                            <td>620000</td>
+                            <td>4035000</td>
                         </tr>
                         <tr>
-                            <td>November</td>
+                            <td>Juni</td>
                             <td>Minggu 2</td>
-                            <td>5500</td>
-                            <td>6500</td>
-                            <td>7500</td>
-                            <td>8500</td>
+                            <td>290000</td>
+                            <td>480000</td>
+                            <td>610000</td>
+                            <td>4530000</td>
                         </tr>
                         <tr>
-                            <td>November</td>
+                            <td>Juni</td>
                             <td>Minggu 3</td>
-                            <td>6000</td>
-                            <td>7000</td>
-                            <td>8000</td>
-                            <td>9000</td>
+                            <td>244500</td>
+                            <td>430000</td>
+                            <td>580000</td>
+                            <td>4580000</td>
                         </tr>
                         <tr>
-                            <td>November</td>
+                            <td>Juni</td>
                             <td>Minggu 4</td>
-                            <td>6500</td>
-                            <td>7500</td>
-                            <td>8500</td>
-                            <td>9500</td>
+                            <td>270000</td>
+                            <td>460000</td>
+                            <td>600000</td>
+                            <td>4235000</td>
                         </tr>
                     </tbody>
                 </table>
@@ -137,7 +114,7 @@
             <div class="">
                 <p class="fs-5" style="color: #ffb905;">
                     <span style="font-family: 'Arial', sans-serif;" class="text-dark fw-bolder">Follow</span>
-                    @MasjidIbnuSabilOfficial
+                    @masjidibnusabiljkt
                 </p>
                 <div style="width: 30%; height: 4px; background-color: #6AEBAD;"></div>
             </div>

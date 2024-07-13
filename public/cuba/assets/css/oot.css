@@ -4,7 +4,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(90deg, #FFB905 20.35%, #6AEBAD 50%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

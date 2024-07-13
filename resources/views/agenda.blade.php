@@ -30,42 +30,42 @@
             <div class="card">
                 <div class="row p-2 mb-3">
                     <div class="col-5">
-                        <img src="{{ asset('images/poster1.png')}}" class="w-100" alt="">
+                        <img src="{{ asset('images/agenda1.jpg')}}" class="w-100" alt="">
                     </div>
                     <div class="col-7">
-                        <h3 class="mb-2">Lorem ipsum dolor sit.</h3>
+                        <h3 class="mb-2">Membaca Surah Al - Fatihah</h3>
                         <p class="fs-6 text-secondary mb-2" style="font-family: Arial, Helvetica, sans-serif;">
                             <i class="fa fa-clock-o"></i>
-                            08 Oct 2023 13:30 WIB - 06 Oct 2023 17:00 WIB
+                            09 Juli 2024 18:30 WIB - Selesai
                         </p>
                         <p class="fs-6 text-secondary mb-3" style="font-family: Arial, Helvetica, sans-serif;">
                             <i class="fa fa-map-marker"></i>
-                            Selasa Masjid Istiqlal
+                            Selasa Masjid Ibnu Sabil
                         </p>
-                        <h6 class="mb-3">Lorem ipsum dolor sit.</h6>
+                        <h6 class="mb-3">Kajian Umum Hari Selasa</h6>
                         <p class="fs-6 text-secondary mb-3" style="font-family: Arial, Helvetica, sans-serif;">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officiis voluptatum voluptatibus debitis qui animi nemo temporibus expedita iusto, nisi aperiam esse veritatis facilis corrupti laborum, vero voluptas amet sapiente eveniet ea iure nobis! Corporis distinctio deserunt eius aspernatur pariatur.
+                            Membahas sifat shalat nabi yang menggunakan kitab syeikh Al Bani.
                         </p>
                     </div>
                 </div>
 
                 <div class="row p-2 mb-3">
                     <div class="col-5">
-                        <img src="{{ asset('images/poster2.png')}}" class="w-100" alt="">
+                        <img src="{{ asset('images/Idul Adha.png')}}" class="w-100" alt="">
                     </div>
                     <div class="col-7">
-                        <h3 class="mb-2">Lorem ipsum dolor sit.</h3>
+                        <h3 class="mb-2">Shalat Idul Adha Bersama</h3>
                         <p class="fs-6 text-secondary mb-2" style="font-family: Arial, Helvetica, sans-serif;">
                             <i class="fa fa-clock-o"></i>
-                            08 Oct 2023 13:30 WIB - 06 Oct 2023 17:00 WIB
+                            17 Juni 2024 07:00 WIB - Selesai
                         </p>
                         <p class="fs-6 text-secondary mb-3" style="font-family: Arial, Helvetica, sans-serif;">
                             <i class="fa fa-map-marker"></i>
-                            Selasa Masjid Istiqlal
+                            Senin Masjid Ibnu Sabil
                         </p>
-                        <h6 class="mb-3">Lorem ipsum dolor sit.</h6>
+                        <h6 class="mb-3">Pelaksanaan Shalat Idul Adha Berjamaah</h6>
                         <p class="fs-6 text-secondary mb-3" style="font-family: Arial, Helvetica, sans-serif;">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officiis voluptatum voluptatibus debitis qui animi nemo temporibus expedita iusto, nisi aperiam esse veritatis facilis corrupti laborum, vero voluptas amet sapiente eveniet ea iure nobis! Corporis distinctio deserunt eius aspernatur pariatur.
+                            Shalat dilaksanakan di jalan Pisangan Baru Tengah yang berlokasikan didepan Gang EE. Dan dilanjutkan dengan ceramah oleh Ustadz Beni Ardiansyah
                         </p>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
             <div class="">
                 <p class="fs-5" style="color: #ffb905;">
                     <span style="font-family: 'Arial', sans-serif;" class="text-dark fw-bolder">Follow</span>
-                    @MasjidIbnuSabilOfficial
+                    @masjidibnusabiljkt
                 </p>
                 <div style="width: 30%; height: 4px; background-color: #6AEBAD;"></div>
             </div>

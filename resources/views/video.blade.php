@@ -32,39 +32,27 @@
                 <div class="gallery my-gallery card-body row" itemscope="">
                     <figure class="col-md-6 mb-6">
                         <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
-                        </a>
+                            <iframe class="w-100" src="https://www.youtube.com/embed/mWkUDcXaFzU?si=eWRGtZEwtDGUldP2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </a>
                         <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Judul</h6>
-                            <p class="text-secondary small">Posted on <span class="text-muted">Tanggal</span></p>
+                            <h6 class="fw-bold mb-1">Pelaksanaan Shalat Idul Fitri</h6>
+                            <p class="text-secondary small">Posted on <span class="text-muted">17 Juni 2024</span></p>
                         </figcaption>
                     </figure>
 
                     <figure class="col-md-6 mb-6">
                         <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
-                        </a>
+                            <iframe class="w-100" src="https://www.youtube.com/embed/dRPc5qsfkkg?si=cEUmRWCqWipDVLoT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </a>
                         <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Judul</h6>
-                            <p class="text-secondary small">Posted on <span class="text-muted">Tanggal</span></p>
+                            <h6 class="fw-bold mb-1">Qurban Idul Adha 1445 H - Masjid Ibnu Sabil</h6>
+                            <p class="text-secondary small">Posted on <span class="text-muted">18 Juni 2024</span></p>
                         </figcaption>
                     </figure>
                     <figure class="col-md-6 mb-6">
                         <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
-                        </a>
+                        <iframe class="w-100" src="https://www.youtube.com/embed/j9N4xhxzRGk?si=zbFa6LZxV5ry5u63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </a>
                         <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Judul</h6>
-                            <p class="text-secondary small">Posted on <span class="text-muted">Tanggal</span></p>
-                        </figcaption>
-                    </figure>
-                    <figure class="col-md-6 mb-6">
-                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/img-1.png')}}" alt="Image description">
-                        </a>
-                        <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Judul</h6>
-                            <p class="text-secondary small">Posted on <span class="text-muted">Tanggal</span></p>
+                            <h6 class="fw-bold mb-1">Pelaksanaan Shalat Idul Fitri</h6>
+                            <p class="text-secondary small">Posted on <span class="text-muted">17 Juni 2024</span></p>
                         </figcaption>
                     </figure>
 
@@ -77,7 +65,7 @@
             <div class="">
                 <p class="fs-5" style="color: #ffb905;">
                     <span style="font-family: 'Arial', sans-serif;" class="text-dark fw-bolder">Follow</span>
-                    @MasjidIbnuSabilOfficial
+                    @masjidibnusabiljkt
                 </p>
                 <div style="width: 30%; height: 4px; background-color: #6AEBAD;"></div>
             </div>
