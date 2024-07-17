@@ -21,6 +21,12 @@
 <script src="{{ asset('cuba/assets/js/notify/index.js') }}"></script>
 <script src="{{ asset('cuba/assets/js/height-equal.js') }}"></script>
 <script src="{{ asset('cuba/assets/js/animation/wow/wow.min.js') }}"></script>
+{{-- Datatables Js --}}
+<script src="{{ asset('cuba/assets/js/datatable/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('cuba/assets/js/datatable/datatables/datatable.custom.js') }}"></script>
+{{-- SweetAlert --}}
+<script src="{{ asset('cuba/assets/js/sweet-alert/sweetalert.min.js') }}"></script>
+<script src="{{ asset('cuba/assets/js/sweet-alert/app.js') }}"></script>
 <!-- Plugins JS Ends-->
 
 <!-- Theme js-->

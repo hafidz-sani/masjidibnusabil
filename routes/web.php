@@ -34,6 +34,17 @@ Route::get('/keuangan', [App\Http\Controllers\KeuanganController::class, 'index'
 // DASHBOARD ROUTES
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+    
+    Route::prefix('dashboard')->as('dashboard.')->group(function () {
+        
+        // Untuk Admin
+        Route::prefix('admin')->as('admin.')->group(function () {
+            Route::resource('users', App\Http\Controllers\UserController::class);
+        });
+
+
+    });
+    
     // Route::get('/dashboard', [App\Http\Controllers\KeuanganController::class, 'index'])->name('keuangan');
 });
 
