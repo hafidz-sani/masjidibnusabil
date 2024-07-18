@@ -1,8 +1,9 @@
 <!-- Page Sidebar Start-->
 <div class="sidebar-wrapper" sidebar-layout="stroke-svg">
     <div>
-        <div class="mt-3 d-flex justify-content-center"><a href="{{ route('home') }}"><img class="img-fluid for-light" width="80px" src="{{ asset('images/logo_masjid.png') }}"
-                    alt=""><img class="img-fluid for-dark" src="{{ asset('images/logo_masjid.png') }}" alt=""></a>
+        <div class="mt-3 d-flex justify-content-center"><a href="{{ route('home') }}"><img class="img-fluid for-light"
+                    width="80px" src="{{ asset('images/logo_masjid.png') }}" alt=""><img
+                    class="img-fluid for-dark" src="{{ asset('images/logo_masjid.png') }}" alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"></i></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
         </div>
@@ -38,29 +39,29 @@
                             <svg class="fill-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
                                 </use>
-                            </svg><span class="lan-3">Beranda</span></a>
+                            </svg><span>Beranda</span></a>
                     </li>
                     {{-- END GENERAL --}}
 
                     {{-- START ADMIN --}}
                     <li class="sidebar-main-title">
                         <div>
-                            <h6></h6>
+                            <h6>Menu Admin</h6>
                         </div>
                     </li>
-                    <li class="sidebar-list"><i class="fa fa-thumb-tack"> </i>
-                        <label class="badge badge-light-secondary">New</label><a class="sidebar-link sidebar-title"
-                            href="#">
+                    <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
+                        <a class="sidebar-link sidebar-title link-nav" 
+                            href="{{ route('dashboard.admin.users.index') }}">
                             <svg class="stroke-icon">
-                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-project') }}"></use>
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
+                                </use>
                             </svg>
                             <svg class="fill-icon">
-                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-project') }}"></use>
-                            </svg><span>Master </span></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="{{ url('admin/golongan') }}">Golongan</a></li>
-                            <li><a href="projectcreate.html">Create new</a></li>
-                        </ul>
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
+                                </use>
+                            </svg>
+                            <span>Users Management</span>
+                        </a>
                     </li>
                     {{-- END ADMIN --}}
                 </ul>

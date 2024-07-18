@@ -11,9 +11,9 @@
     <meta name="keywords"
         content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-    <title>Gojags - Portal Pusdiklat BPS</title>
+    <link rel="icon" href="{{ asset('images/logo_masjid.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/logo_masjid.png') }}" type="image/x-icon">
+    <title>Masjid Ibnu Sabil</title>
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap"
         rel="stylesheet">
@@ -33,6 +33,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('cuba/assets/css/vendors/slick-theme.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('cuba/assets/css/vendors/scrollbar.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('cuba/assets/css/vendors/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cuba/assets/css/vendors/datatables.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('cuba/assets/css/vendors/sweetalert2.css') }}">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="{{ asset('cuba/assets/css/vendors/bootstrap.css') }}">
