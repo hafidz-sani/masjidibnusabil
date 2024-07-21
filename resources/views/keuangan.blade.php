@@ -64,46 +64,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Mei</td>
-                            <td>Minggu 4</td>
-                            <td>244000</td>
-                            <td>456000</td>
-                            <td>562000</td>
-                            <td>4535000</td>
+                        
+                        @foreach ($finances as $finance)
+                        <tr id="finance-{{$finance->id}}">
+                            <td>{{ $finance->bulan }}</td>
+                            <td>{{ $finance->minggu }}</td>
+                            <td>{{ $finance->operasional }}</td>
+                            <td>{{ $finance->yatim }}</td>
+                            <td>{{ $finance->dhuafa }}</td>
+                            <td>{{ $finance->jumat }}</td>
                         </tr>
-                        <tr>
-                            <td>Juni</td>
-                            <td>Minggu 1</td>
-                            <td>340000</td>
-                            <td>500000</td>
-                            <td>620000</td>
-                            <td>4035000</td>
-                        </tr>
-                        <tr>
-                            <td>Juni</td>
-                            <td>Minggu 2</td>
-                            <td>290000</td>
-                            <td>480000</td>
-                            <td>610000</td>
-                            <td>4530000</td>
-                        </tr>
-                        <tr>
-                            <td>Juni</td>
-                            <td>Minggu 3</td>
-                            <td>244500</td>
-                            <td>430000</td>
-                            <td>580000</td>
-                            <td>4580000</td>
-                        </tr>
-                        <tr>
-                            <td>Juni</td>
-                            <td>Minggu 4</td>
-                            <td>270000</td>
-                            <td>460000</td>
-                            <td>600000</td>
-                            <td>4235000</td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

@@ -62,6 +62,30 @@
                             </svg>
                             <span>Users Management</span>
                         </a>
+                        <a class="sidebar-link sidebar-title link-nav" 
+                            href="{{ route('dashboard.admin.users.index') }}">
+                            <svg class="stroke-icon">
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
+                                </use>
+                            </svg>
+                            <svg class="fill-icon">
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
+                                </use>
+                            </svg>
+                            <span>Galery Management</span>
+                        </a>
+                        <a class="sidebar-link sidebar-title link-nav" 
+                            href="{{ route('dashboard.admin.finance.index') }}">
+                            <svg class="stroke-icon">
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
+                                </use>
+                            </svg>
+                            <svg class="fill-icon">
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
+                                </use>
+                            </svg>
+                            <span>Finance Management</span>
+                        </a>
                     </li>
                     {{-- END ADMIN --}}
                 </ul>
