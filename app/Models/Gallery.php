@@ -14,6 +14,9 @@ class Gallery extends Model
      *
      * @var array
      */
+
+    protected $table = 'gallery';
+
     protected $fillable = [
         'url',
         'title',

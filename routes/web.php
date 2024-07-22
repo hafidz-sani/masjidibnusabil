@@ -40,8 +40,10 @@ Route::middleware(['auth'])->group(function () {
         // Untuk Admin
         Route::prefix('admin')->as('admin.')->group(function () {
             Route::resource('users', App\Http\Controllers\UserController::class);
-            Route::resource('galery', App\Http\Controllers\GaleryManagementController::class);
+            Route::resource('gallery', App\Http\Controllers\GalleryManagementController::class);
             Route::resource('finance', App\Http\Controllers\FinanceManagementController::class);
+            Route::resource('lecture', App\Http\Controllers\LectureManagementController::class);
+            Route::resource('person', App\Http\Controllers\PersonManagementController::class);
 
         });
 

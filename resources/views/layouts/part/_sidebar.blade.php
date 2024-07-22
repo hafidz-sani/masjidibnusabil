@@ -63,7 +63,7 @@
                             <span>Users Management</span>
                         </a>
                         <a class="sidebar-link sidebar-title link-nav" 
-                            href="{{ route('dashboard.admin.users.index') }}">
+                            href="{{ route('dashboard.admin.gallery.index') }}">
                             <svg class="stroke-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
                                 </use>
@@ -86,6 +86,31 @@
                             </svg>
                             <span>Finance Management</span>
                         </a>
+                        <a class="sidebar-link sidebar-title link-nav" 
+                            href="{{ route('dashboard.admin.lecture.index') }}">
+                            <svg class="stroke-icon">
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
+                                </use>
+                            </svg>
+                            <svg class="fill-icon">
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
+                                </use>
+                            </svg>
+                            <span>Lecture Management</span>
+                        </a>
+                        <a class="sidebar-link sidebar-title link-nav" 
+                            href="{{ route('dashboard.admin.person.index') }}">
+                            <svg class="stroke-icon">
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
+                                </use>
+                            </svg>
+                            <svg class="fill-icon">
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
+                                </use>
+                            </svg>
+                            <span>Person Management</span>
+                        </a>
+                        
                     </li>
                     {{-- END ADMIN --}}
                 </ul>
