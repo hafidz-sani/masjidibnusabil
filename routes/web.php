@@ -44,6 +44,7 @@ Route::middleware(['auth'])->group(function () {
             Route::resource('finance', App\Http\Controllers\FinanceManagementController::class);
             Route::resource('lecture', App\Http\Controllers\LectureManagementController::class);
             Route::resource('person', App\Http\Controllers\PersonManagementController::class);
+            Route::resource('event', App\Http\Controllers\EventManagementController::class);
 
         });
 

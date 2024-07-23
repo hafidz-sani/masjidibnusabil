@@ -4,7 +4,7 @@
 @push('title')
 <div class="row">
     <div class="col-6">
-        <h4>Manajemen Keuangan</h4>
+        <h4>Manajemen Agenda</h4>
     </div>
     <div class="col-6">
         <x-breadcrumb :values="['users']">
@@ -19,15 +19,14 @@
         <div class="card">
             <div class="card-header d-flex justify-content-between pb-0 card-no-border">
                 <div>
-                    <h4>Halaman Keuangan</h4>
-                    <span>Berikut pemasukan yang ada di website Masjid Ibnu Sabil</span>
+                    <h4>Halaman Agenda</h4>
+                    <span>Berikut agenda yang ada di website Masjid Ibnu Sabil</span>
                 </div>
                 <div>
-                    {{-- <a href="{{ route('dashboard.admin.finance.create') }}" class="btn btn-primary">Tambah Data</a> --}}
-                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#tambahkeuangan">Tambah Data</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#tambahEvent">Tambah Data</button>
 
-                    {{-- MODAL TAMBAH KEUANGAN --}}
-                    <div class="modal fade" id="tambahkeuangan" tabindex="-1" role="dialog" aria-labelledby="tooltipmodal" aria-hidden="true">
+                    {{-- MODAL TAMBAH EVENT --}}
+                    <div class="modal fade" id="tambahEvent" tabindex="-1" role="dialog" aria-labelledby="tooltipmodal" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -35,37 +34,38 @@
                                     <button class="btn-close py-0" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form class="row g-3" action="{{ route('dashboard.admin.finance.store') }}" method="POST" enctype="multipart/form-data">
+                                    <form class="row g-3" action="{{ route('dashboard.admin.event.store') }}" method="POST" enctype="multipart/form-data">
                                         @csrf
                                         <div class="col-md-12">
-                                            <label class="form-label" for="bulan">Bulan</label>
-                                            <input class="form-control" id="bulan" name="bulan" type="text" placeholder="Enter Your Name">
+                                            <label class="form-label" for="date">Date</label>
+                                            <input class="form-control" id="date" name="date" type="date">
                                         </div>
                                         <div class="col-md-12">
-                                            <label class="form-label" for="minggu">Minggu</label>
-                                            <input class="form-control" id="minggu" name="minggu" type="text" placeholder="Enter Your Name">
+                                            <label class="form-label" for="time">Time</label>
+                                            <input class="form-control" id="time" name="time" type="time">
                                         </div>
                                         <div class="col-md-12">
-                                            <label class="form-label" for="operasional">Operasional</label>
-                                            <input class="form-control" id="operasional" name="operasional" type="number" placeholder="Enter Your Name">
+                                            <label class="form-label" for="picture">Picture</label>
+                                            <input class="form-control" id="picture" name="picture" type="file">
                                         </div>
                                         <div class="col-md-12">
-                                            <label class="form-label" for="yatim">Yatim</label>
-                                            <input class="form-control" id="yatim" name="yatim" type="number" placeholder="Enter Your Name">
+                                            <label class="form-label" for="title">Title</label>
+                                            <input class="form-control" id="title" name="title" type="text" placeholder="Masukan Title">
                                         </div>
                                         <div class="col-md-12">
-                                            <label class="form-label" for="dhuafa">Dhuafa</label>
-                                            <input class="form-control" id="dhuafa" name="dhuafa" type="number" placeholder="Enter Your Name">
+                                            <label class="form-label" for="subtitle">Subtitle</label>
+                                            <input class="form-control" id="subtitle" name="subtitle" type="text" placeholder="Masukan Subtitle">
                                         </div>
                                         <div class="col-md-12">
-                                            <label class="form-label" for="jumat">Jumat</label>
-                                            <input class="form-control" id="jumat" name="jumat" type="number" placeholder="Enter Your Name">
+                                            <label class="form-label" for="content">Content</label>
+                                            <textarea class="form-control" id="content" name="content" placeholder="Masukan Content"></textarea>
                                         </div>
                                         <div class="col-12 d-flex justify-content-end">
                                             <button class="btn btn-secondary me-2" type="button" data-bs-dismiss="modal">Tutup</button>
                                             <button class="btn btn-primary" type="submit">Tambah</button>
                                         </div>
                                     </form>
+
                                 </div>
                             </div>
                         </div>
@@ -80,35 +80,36 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Bulan</th>
-                                <th>Minggu</th>
-                                <th>Operasional</th>
-                                <th>Yatim</th>
-                                <th>Dhuafa</th>
-                                <th>Jumat</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Picture</th>
+                                <th>Title</th>
+                                <th>Subtitle</th>
+                                <th>Content</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             @php $no = 0; @endphp
-                            @foreach ($finances as $finance)
-                            <tr id="finance-{{$finance->id}}">
+                            @foreach ($events as $event)
+                            <tr id="event-{{$event->id}}">
                                 <td>{{ ++$no }}</td>
-                                <td>{{ $finance->bulan }}</td>
-                                <td>{{ $finance->minggu }}</td>
-                                <td>{{ $finance->operasional }}</td>
-                                <td>{{ $finance->yatim }}</td>
-                                <td>{{ $finance->dhuafa }}</td>
-                                <td>{{ $finance->jumat }}</td>
+                                <td>{{ $event->date }}</td>
+                                <td>{{ $event->time }}</td>
+                                <td><img src="{{ asset($event->picture) }}" alt="{{ $event->title }}" width="50">
+                                </td>
+                                <td>{{ $event->title }}</td>
+                                <td>{{ $event->subtitle }}</td>
+                                <td>{{ $event->content }}</td>
                                 <td>
                                     <ul class="action">
                                         <li class="edit">
-                                            <a href="javascript:void(0)" class="pe-auto" onclick="editFinance({{ $finance->id }})">
+                                            <a href="javascript:void(0)" class="pe-auto" onclick="editEvent({{ $event->id }})">
                                                 <i class="icon-pencil-alt"></i>
                                             </a>
                                         </li>
                                         <li class="delete">
-                                            <a href="javascript:void(0)" class="pe-auto" onclick="confirmDelete({{ $finance->id }})">
+                                            <a href="javascript:void(0)" class="pe-auto" onclick="confirmDelete({{ $event->id }})">
                                                 <i class="icon-trash"></i>
                                             </a>
                                         </li>
@@ -120,12 +121,12 @@
                         <tfoot>
                             <tr>
                                 <th>No</th>
-                                <th>Bulan</th>
-                                <th>Minggu</th>
-                                <th>Operasional</th>
-                                <th>Yatim</th>
-                                <th>Dhuafa</th>
-                                <th>Jumat</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Picture</th>
+                                <th>Title</th>
+                                <th>Subtitle</th>
+                                <th>Content</th>
                                 <th>Action</th>
                             </tr>
                         </tfoot>
@@ -138,41 +139,42 @@
 </div>
 <!-- Container-fluid Ends-->
 
-{{-- MODAL EDIT KEUANGAN --}}
-<div class="modal fade" id="editFinanceModal" tabindex="-1" role="dialog" aria-labelledby="tooltipmodal" aria-hidden="true">
+{{-- MODAL EDIT EVENT --}}
+<div class="modal fade" id="editEventModal" tabindex="-1" role="dialog" aria-labelledby="tooltipmodal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Edit Keuangan</h5>
+                <h5 class="modal-title">Edit Event</h5>
                 <button class="btn-close py-0" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form id="editFinanceForm" class="row g-3" method="POST" enctype="multipart/form-data">
+                <form id="editEventForm" class="row g-3" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
                     <div class="col-md-12">
-                        <label class="form-label" for="editBulan">Bulan</label>
-                        <input class="form-control" id="editBulan" name="bulan" type="text" placeholder="Enter Your Name">
+                        <label class="form-label" for="editDate">Date</label>
+                        <input class="form-control" id="editDate" name="date" type="date">
                     </div>
                     <div class="col-md-12">
-                        <label class="form-label" for="editMinggu">Minggu</label>
-                        <input class="form-control" id="editMinggu" name="minggu" type="text" placeholder="Enter Your Email">
+                        <label class="form-label" for="editTime">Time</label>
+                        <input class="form-control" id="editTime" name="time" type="time">
                     </div>
                     <div class="col-md-12">
-                        <label class="form-label" for="editOperasional">Operasional</label>
-                        <input class="form-control" id="editOperasional" name="operasional" type="number" placeholder="Enter Your Email">
+                        <label class="form-label" for="editPicture">Picture</label>
+                        <input class="form-control" id="editPicture" name="picture" type="file">
+                        <img id="currentPicture" src="" alt="Current Picture" width="100" class="mt-2">
                     </div>
                     <div class="col-md-12">
-                        <label class="form-label" for="editYatim">Yatim</label>
-                        <input class="form-control" id="editYatim" name="yatim" type="number" placeholder="Enter Your Email">
+                        <label class="form-label" for="editTitle">Title</label>
+                        <input class="form-control" id="editTitle" name="title" type="text" placeholder="Masukan Title">
                     </div>
                     <div class="col-md-12">
-                        <label class="form-label" for="editDhuafa">Dhuafa</label>
-                        <input class="form-control" id="editDhuafa" name="dhuafa" type="number" placeholder="Enter Your Email">
+                        <label class="form-label" for="editSubtitle">Subtitle</label>
+                        <input class="form-control" id="editSubtitle" name="subtitle" type="text" placeholder="Masukan Subtitle">
                     </div>
                     <div class="col-md-12">
-                        <label class="form-label" for="editJumat">Jumat</label>
-                        <input class="form-control" id="editJumat" name="jumat" type="number" placeholder="Enter Your Email">
+                        <label class="form-label" for="editContent">Content</label>
+                        <textarea class="form-control" id="editContent" name="content" placeholder="Masukan Content"></textarea>
                     </div>
                     <div class="col-12 d-flex justify-content-end">
                         <button class="btn btn-secondary me-2" type="button" data-bs-dismiss="modal">Tutup</button>
@@ -191,19 +193,20 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-    function editFinance(id) {
+    function editEvent(id) {
         $.ajax({
-            url: '/dashboard/admin/finance/' + id + '/edit',
+            url: '/dashboard/admin/event/' + id + '/edit',
             method: 'GET',
             success: function(data) {
-                $('#editBulan').val(data.bulan);
-                $('#editMinggu').val(data.minggu);
-                $('#editOperasional').val(data.operasional);
-                $('#editYatim').val(data.yatim);
-                $('#editDhuafa').val(data.dhuafa);
-                $('#editJumat').val(data.jumat);
-                $('#editFinanceForm').attr('action', '/dashboard/admin/finance/' + id);
-                $('#editFinanceModal').modal('show');
+                $('#editDate').val(data.date);
+                $('#editTime').val(data.time);
+                $('#editTitle').val(data.title);
+                $('#editSubtitle').val(data.subtitle);
+                $('#editContent').val(data.content);
+                $('#currentPicture').attr('src', '/storage/' + data.picture);
+
+                $('#editEventForm').attr('action', '/dashboard/admin/event/' + id);
+                $('#editEventModal').modal('show');
             }
         });
     }
@@ -220,23 +223,23 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 $.ajax({
-                    url: '/dashboard/admin/finance/' + id,
+                    url: '/dashboard/admin/event/' + id,
                     type: 'DELETE',
                     data: {
                         _token: '{{ csrf_token() }}'
                     },
                     success: function(response) {
-                        $('#finance-' + id).remove();
+                        $('#event-' + id).remove();
                         Swal.fire(
                             'Deleted!',
-                            'Finance has been deleted.',
+                            'Event item has been deleted.',
                             'success'
                         );
                     },
                     error: function(response) {
                         Swal.fire(
                             'Error!',
-                            'There was an error deleting the user.',
+                            'There was an error deleting the event item.',
                             'error'
                         );
                     }

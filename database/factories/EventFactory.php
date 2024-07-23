@@ -24,7 +24,7 @@ class EventFactory extends Factory
         return [
             'date' => $this->faker->date(),
             'time' => $this->faker->time(),
-            'thumbnail' => Gallery::factory()->create()->id,
+            'picture' => $this->faker->text(),
             'title' => $this->faker->sentence(4),
             'subtitle' => $this->faker->regexify('[A-Za-z0-9]{255}'),
             'content' => $this->faker->paragraphs(3, true),

@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::disableForeignKeyConstraints();
 
-        Schema::create('events', function (Blueprint $table) {
+        Schema::create('event', function (Blueprint $table) {
             $table->id();
             $table->date('date');
             $table->time('time');
-            $table->foreignId('thumbnail')->references('id')->on('gallery')->constrained()->onUpdate('cascade')->onDelete('restrict');
+            $table->string('picture');
             $table->string('title', 255);
             $table->string('subtitle', 255);
             $table->text('content');

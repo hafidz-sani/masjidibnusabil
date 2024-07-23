@@ -4,7 +4,7 @@
 @push('title')
 <div class="row">
     <div class="col-6">
-        <h4>Person Management</h4>
+        <h4>Manajemen Data Jamaah</h4>
     </div>
     <div class="col-6">
         <x-breadcrumb :values="['users']">
@@ -19,12 +19,12 @@
         <div class="card">
             <div class="card-header d-flex justify-content-between pb-0 card-no-border">
                 <div>
-                    <h4>Halaman Person</h4>
-                    <span>Berikut data person yang ada di website Masjid Ibnu Sabil</span>
+                    <h4>Halaman Data Jamaah</h4>
+                    <span>Berikut data jamaah yang ada di website Masjid Ibnu Sabil</span>
                 </div>
                 <div>
-                    {{-- <a href="{{ route('dashboard.admin.person.create') }}" class="btn btn-primary">Tambah Person</a> --}}
-                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#tambahperson">Tambah Person</button>
+                    {{-- <a href="{{ route('dashboard.admin.person.create') }}" class="btn btn-primary">Tambah Data</a> --}}
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#tambahperson">Tambah Data</button>
 
                     {{-- MODAL TAMBAH PERSON --}}
                     <div class="modal fade" id="tambahperson" tabindex="-1" role="dialog" aria-labelledby="tooltipmodal" aria-hidden="true">

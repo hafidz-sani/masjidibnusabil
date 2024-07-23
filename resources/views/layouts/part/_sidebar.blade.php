@@ -52,63 +52,75 @@
                     <li class="sidebar-list"><i class="fa fa-thumb-tack"></i>
                         <a class="sidebar-link sidebar-title link-nav" 
                             href="{{ route('dashboard.admin.users.index') }}">
-                            <svg class="stroke-icon">
+                            <!-- <svg class="stroke-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
                                 </use>
                             </svg>
                             <svg class="fill-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
                                 </use>
-                            </svg>
-                            <span>Users Management</span>
+                            </svg> -->
+                            <span>Manajemen Users</span>
                         </a>
                         <a class="sidebar-link sidebar-title link-nav" 
                             href="{{ route('dashboard.admin.gallery.index') }}">
-                            <svg class="stroke-icon">
+                            <!-- <svg class="stroke-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
                                 </use>
                             </svg>
                             <svg class="fill-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
                                 </use>
-                            </svg>
-                            <span>Galery Management</span>
+                            </svg> -->
+                            <span>Manajemen Galeri</span>
                         </a>
                         <a class="sidebar-link sidebar-title link-nav" 
                             href="{{ route('dashboard.admin.finance.index') }}">
-                            <svg class="stroke-icon">
+                            <!-- <svg class="stroke-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
                                 </use>
                             </svg>
                             <svg class="fill-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
                                 </use>
-                            </svg>
-                            <span>Finance Management</span>
+                            </svg> -->
+                            <span>Manajemen Keuangan</span>
                         </a>
                         <a class="sidebar-link sidebar-title link-nav" 
                             href="{{ route('dashboard.admin.lecture.index') }}">
-                            <svg class="stroke-icon">
+                            <!-- <svg class="stroke-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
                                 </use>
                             </svg>
                             <svg class="fill-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
                                 </use>
-                            </svg>
-                            <span>Lecture Management</span>
+                            </svg> -->
+                            <span>Manajemen Kajian</span>
                         </a>
                         <a class="sidebar-link sidebar-title link-nav" 
                             href="{{ route('dashboard.admin.person.index') }}">
-                            <svg class="stroke-icon">
+                            <!-- <svg class="stroke-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
                                 </use>
                             </svg>
                             <svg class="fill-icon">
                                 <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
                                 </use>
+                            </svg> -->
+                            <span>Manajemen Data Jamaah</span>
+                        </a>
+                        <a class="sidebar-link sidebar-title link-nav" 
+                            href="{{ route('dashboard.admin.event.index') }}">
+                            <!-- <svg class="stroke-icon">
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#stroke-home') }}">
+                                </use>
                             </svg>
-                            <span>Person Management</span>
+                            <svg class="fill-icon">
+                                <use href="{{ asset('cuba/assets/svg/icon-sprite.svg#fill-home') }}">
+                                </use>
+                            </svg> -->
+                            <span>Manajemen Agenda</span>
                         </a>
                         
                     </li>

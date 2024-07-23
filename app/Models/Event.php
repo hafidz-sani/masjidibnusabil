@@ -15,10 +15,13 @@ class Event extends Model
      *
      * @var array
      */
+
+     protected $table = 'event';
+
     protected $fillable = [
         'date',
         'time',
-        'thumbnail',
+        'picture',
         'title',
         'subtitle',
         'content',
@@ -32,11 +35,7 @@ class Event extends Model
     protected $casts = [
         'id' => 'integer',
         'date' => 'date',
-        'thumbnail' => 'integer',
     ];
 
-    public function thumbnail(): BelongsTo
-    {
-        return $this->belongsTo(Gallery::class);
-    }
+    
 }

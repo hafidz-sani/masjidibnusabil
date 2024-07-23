@@ -4,7 +4,7 @@
 @push('title')
 <div class="row">
     <div class="col-6">
-        <h4>Lecture Management</h4>
+        <h4>Manajemen Kajian</h4>
     </div>
     <div class="col-6">
         <x-breadcrumb :values="['users']">
@@ -23,7 +23,7 @@
                     <span>Berikut kajian yang ada di website Masjid Ibnu Sabil</span>
                 </div>
                 <div>
-                    {{-- <a href="{{ route('dashboard.admin.lecture.create') }}" class="btn btn-primary">Tambah Pemasukan</a> --}}
+                    {{-- <a href="{{ route('dashboard.admin.lecture.create') }}" class="btn btn-primary">Tambah Data</a> --}}
                     <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#tambahkajian">Tambah Pemasukan</button>
 
                     {{-- MODAL TAMBAH KAJIAN --}}
