@@ -27,7 +27,7 @@ class GalleryManagementController extends Controller
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
             'category' => 'required|in:image,video',
-            'image' => 'required_if:category,image|nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'required_if:category,image|nullable|image|mimes:jpeg,png,jpg,gif',
         ]);
 
         $gallery = new Gallery();
@@ -66,7 +66,7 @@ class GalleryManagementController extends Controller
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
             'category' => 'required|in:image,video',
-            'image' => 'required_if:category,image|nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'required_if:category,image|nullable|image|mimes:jpeg,png,jpg,gif',
         ]);
 
         $gallery = Gallery::findOrFail($id);

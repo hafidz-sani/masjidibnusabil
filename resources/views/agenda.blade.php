@@ -5,7 +5,8 @@
     .title-images {
         /* background-color: transparent; */
         /* background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%); */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{ asset('images/agenda.png')}}");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("{{ asset('images/agenda.png')}}");
         /* background-image: url(../../../images/bg1.jpg); */
         /* background: linear-gradient(to right bottom, #005643 0%, #43b543 25%, #43b543 50%, #005643 100%); */
         height: 70vh;
@@ -28,47 +29,28 @@
     <div class="row">
         <div class="col-xl-8 col-md-12 col-sm-12">
             <div class="card">
+                @foreach($events as $event)
                 <div class="row p-2 mb-3">
                     <div class="col-5">
-                        <img src="{{ asset('images/agenda1.jpg')}}" class="w-100" alt="">
+                        <img src="{{ $event->picture }}" class="w-100" alt="">
                     </div>
                     <div class="col-7">
-                        <h3 class="mb-2">Membaca Surah Al - Fatihah</h3>
+                        <h3 class="mb-2">{{ $event->title }}</h3>
                         <p class="fs-6 text-secondary mb-2" style="font-family: Arial, Helvetica, sans-serif;">
                             <i class="fa fa-clock-o"></i>
-                            09 Juli 2024 18:30 WIB - Selesai
+                            {{ $event->date }} {{ $event->time }} WIB
                         </p>
                         <p class="fs-6 text-secondary mb-3" style="font-family: Arial, Helvetica, sans-serif;">
                             <i class="fa fa-map-marker"></i>
-                            Selasa Masjid Ibnu Sabil
+                            Masjid Ibnu Sabil
                         </p>
-                        <h6 class="mb-3">Kajian Umum Hari Selasa</h6>
+                        <h6 class="mb-3">{{ $event->subtitle }}</h6>
                         <p class="fs-6 text-secondary mb-3" style="font-family: Arial, Helvetica, sans-serif;">
-                            Membahas sifat shalat nabi yang menggunakan kitab syeikh Al Bani.
+                            {{ $event->content }}
                         </p>
                     </div>
                 </div>
-
-                <div class="row p-2 mb-3">
-                    <div class="col-5">
-                        <img src="{{ asset('images/Idul Adha.png')}}" class="w-100" alt="">
-                    </div>
-                    <div class="col-7">
-                        <h3 class="mb-2">Shalat Idul Adha Bersama</h3>
-                        <p class="fs-6 text-secondary mb-2" style="font-family: Arial, Helvetica, sans-serif;">
-                            <i class="fa fa-clock-o"></i>
-                            17 Juni 2024 07:00 WIB - Selesai
-                        </p>
-                        <p class="fs-6 text-secondary mb-3" style="font-family: Arial, Helvetica, sans-serif;">
-                            <i class="fa fa-map-marker"></i>
-                            Senin Masjid Ibnu Sabil
-                        </p>
-                        <h6 class="mb-3">Pelaksanaan Shalat Idul Adha Berjamaah</h6>
-                        <p class="fs-6 text-secondary mb-3" style="font-family: Arial, Helvetica, sans-serif;">
-                            Shalat dilaksanakan di jalan Pisangan Baru Tengah yang berlokasikan didepan Gang EE. Dan dilanjutkan dengan ceramah oleh Ustadz Beni Ardiansyah
-                        </p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
 

@@ -30,32 +30,16 @@
         <div class="col-xl-8 col-md-12 col-sm-12">
             <div class="card">
                 <div class="gallery my-gallery card-body row" itemscope="">
+                    @foreach ($galleries as $gallery)
                     <figure class="col-md-6 mb-6">
-                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <iframe class="w-100" src="https://www.youtube.com/embed/mWkUDcXaFzU?si=eWRGtZEwtDGUldP2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </a>
+                        <a href="{{ $gallery->url }}" data-size="1600x950">
+                            <iframe class="w-100" src="{{ $gallery->url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </a>
                         <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Pelaksanaan Shalat Idul Fitri</h6>
-                            <p class="text-secondary small">Posted on <span class="text-muted">17 Juni 2024</span></p>
+                            <h6 class="fw-bold mb-1">{{ $gallery->title }}</h6>
+                            <p class="text-secondary small">Posted on <span class="text-muted">{{ $gallery->description }}</span></p>
                         </figcaption>
                     </figure>
-
-                    <figure class="col-md-6 mb-6">
-                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                            <iframe class="w-100" src="https://www.youtube.com/embed/dRPc5qsfkkg?si=cEUmRWCqWipDVLoT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </a>
-                        <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Qurban Idul Adha 1445 H - Masjid Ibnu Sabil</h6>
-                            <p class="text-secondary small">Posted on <span class="text-muted">18 Juni 2024</span></p>
-                        </figcaption>
-                    </figure>
-                    <figure class="col-md-6 mb-6">
-                        <a href="{{ asset('images/img-1.png')}}" data-size="1600x950">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/j9N4xhxzRGk?si=zbFa6LZxV5ry5u63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        </a>
-                        <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Pelaksanaan Shalat Idul Fitri</h6>
-                            <p class="text-secondary small">Posted on <span class="text-muted">17 Juni 2024</span></p>
-                        </figcaption>
-                    </figure>
-
+                    @endforeach
                 </div>
             </div>
         </div>

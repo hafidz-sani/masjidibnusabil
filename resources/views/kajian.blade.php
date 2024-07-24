@@ -41,33 +41,15 @@
                 </div>
                 <br>
                 <div class="row px-3">
+                    @foreach ($lectures as $lecture)
                     <figure class="col-md-6 mb-6">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/C2c0MMehKlY?si=-9LjL47bSDbnAx6L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="w-100" src="{{ $lecture->url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Bulughul Maram</h6>
-                            <p class="text-secondary small">Kategori <span class="text-muted">Kajian Ummahat</span></p>
+                            <h6 class="fw-bold mb-1">{{ $lecture->judul }}</h6>
+                            <p class="text-secondary small">Kategori <span class="text-muted">Kajian {{ $lecture->kategori }}</span></p>
                         </figcaption>
                     </figure>
-                    <figure class="col-md-6 mb-6">
-                    <iframe class="w-100" src="https://www.youtube.com/embed/w_s4HA8XCQE?si=71q8FlAYj44pHdDO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                        <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">APA ITU TAQWA? - USTADZ ABU SAAD</h6>
-                            <p class="text-secondary small">Kategori <span class="text-muted">Kajian Spesial</span></p>
-                        </figcaption>
-                    </figure>
-                    <figure class="col-md-6 mb-6">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/zUPc7MrcMAQ?si=bDSXD76M2TcPiwla" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Memperbanyak Kebaikan Di Hari Tua.</h6>
-                            <p class="text-secondary small">Kategori <span class="text-muted">Kajian Spesial</span></p>
-                        </figcaption>
-                    </figure>
-                    <figure class="col-md-6 mb-6">
-                        <iframe class="w-100" src="https://www.youtube.com/embed/afaUm8lIfMY?si=-KRga9GX7DMP5wFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <figcaption class="text-center">
-                            <h6 class="fw-bold mb-1">Kajian Tematik</h6>
-                            <p class="text-secondary small">Kategori <span class="text-muted">Kajian Spesial</span></p>
-                        </figcaption>
-                    </figure>
+                    @endforeach
                 </div>
             </div>
         </div>

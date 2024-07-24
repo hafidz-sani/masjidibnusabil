@@ -24,7 +24,7 @@
                 </div>
                 <div>
                     {{-- <a href="{{ route('dashboard.admin.lecture.create') }}" class="btn btn-primary">Tambah Data</a> --}}
-                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#tambahkajian">Tambah Pemasukan</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#tambahkajian">Tambah Data</button>
 
                     {{-- MODAL TAMBAH KAJIAN --}}
                     <div class="modal fade" id="tambahkajian" tabindex="-1" role="dialog" aria-labelledby="tooltipmodal" aria-hidden="true">

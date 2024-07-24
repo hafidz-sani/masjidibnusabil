@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Event;
 
 class AgendaController extends Controller
 {
     public function index()
     {
-        // Tampilankan view 'photo.blade.php'
-        return view('agenda');
+        $events = Event::all();
+        return view('agenda',compact('events'));
     }
 }

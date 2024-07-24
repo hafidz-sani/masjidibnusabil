@@ -90,40 +90,13 @@
                     <h5>IMAGE GALLERY</h5>
                 </div>
                 <div class="gallery my-gallery card-body row" itemscope="">
+                    @foreach ($galleries as $gallery)
                     <figure class="col-md-4 mb-4">
-                        <a href="{{ asset('images/DSC00338.jpg')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/DSC00338.jpg')}}" alt="Image description">
+                        <a href="{{ $gallery->url }}" data-size="1600x950">
+                            <img class="img-fluid rounded" src="{{ $gallery->url }}" alt="Image description">
                         </a>
-                        <!-- <figcaption class="text-center mt-1">
-                            <p class="text-secondary small">Ini Judul</p>
-                        </figcaption> -->
                     </figure>
-                    <figure class="col-md-4 mb-4">
-                        <a href="{{ asset('images/DSC00695.jpg')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/DSC00695.jpg')}}" alt="Image description">
-                        </a>
-                        <!-- <figcaption class="text-center mt-1">
-                            <p class="text-secondary small">Ini Judul</p>
-                        </figcaption> -->
-                    </figure>
-                   
-                    <figure class="col-md-4 mb-4">
-                        <a href="{{ asset('images/Lomba ISRC2.jpg')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/Lomba ISRC2.jpg')}}" alt="Image description">
-                        </a>
-                        <!-- <figcaption class="text-center mt-1">
-                            <p class="text-secondary small">Ini Judul</p>
-                        </figcaption> -->
-                    </figure>
-                    
-                    <figure class="col-md-4 mb-4">
-                        <a href="{{ asset('images/Lomba ISRC2.jpg')}}" data-size="1600x950">
-                            <img class="img-fluid rounded" src="{{ asset('images/Lomba ISRC2.jpg')}}" alt="Image description">
-                        </a>
-                        <!-- <figcaption class="text-center mt-1">
-                            <p class="text-secondary small">Ini Judul</p>
-                        </figcaption> -->
-                    </figure>
+                    @endforeach
                 </div>
             </div>
         </div>

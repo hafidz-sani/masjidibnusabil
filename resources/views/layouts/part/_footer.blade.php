@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 footer-copyright text-center">
-                <p class="mb-0">Copyright 2024 © Gojags by NOC Pusdiklat BPS </p>
+                <p class="mb-0">Copyright 2024 ©masjidibnusabiljkt </p>
             </div>
         </div>
     </div>
